@@ -77,6 +77,9 @@ let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_disabled_filetypes = ['scss']
 
+" Open NERDTree on startup
+autocmd vimenter * NERDTree
+
 " Popup menu behavior
 set completeopt=longest,menu
 set pumheight=20
