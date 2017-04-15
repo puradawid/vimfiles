@@ -26,6 +26,7 @@ default_bundles=(
   vim-markdown
   vim-rails
   vim-ruby
+  vim-scala
   vim-stylus
   vim-unimpaired
   vim-surround

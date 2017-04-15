@@ -78,7 +78,7 @@ let g:syntastic_auto_loc_list=1
 let g:syntastic_disabled_filetypes = ['scss']
 
 " Open NERDTree on startup
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
 
 " Popup menu behavior
 set completeopt=longest,menu
@@ -215,7 +215,7 @@ endfunction
 function! s:setMarkdown()
   call s:setWrapping()
   call s:setBrowserEnv()
-  au! BufWritePost *.md,*.markdown,*.mkd :MDP
+"  au! BufWritePost *.md,*.markdown,*.mkd :MDP
 endfunction
 
 " Commands for vim-rails
