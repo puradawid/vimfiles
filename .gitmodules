@@ -142,3 +142,6 @@
 [submodule "home/.vim/bundle_storage/vim-scala"]
 	path = home/.vim/bundle_storage/vim-scala
 	url = https://github.com/derekwyatt/vim-scala
+[submodule "home/.vim/bundle_storage/jedi-vim"]
+	path = home/.vim/bundle_storage/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim
