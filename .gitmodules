@@ -145,3 +145,15 @@
 [submodule "home/.vim/bundle_storage/jedi-vim"]
 	path = home/.vim/bundle_storage/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim
+[submodule "home/.vim/bundle_storage/python-mode"]
+	path = home/.vim/bundle_storage/python-mode
+	url = https://github.com/python-mode/python-mode
+[submodule "home/.vim/bundle_storage/vimproc.vim"]
+	path = home/.vim/bundle_storage/vimproc.vim
+	url = https://github.com/Shougo/vimproc.vim
+[submodule "home/.vim/bundle_storage/ropevim"]
+	path = home/.vim/bundle_storage/ropevim
+	url = https://github.com/python-rope/ropevim
+[submodule "home/.vim/bundle_storage/vim-vebugger"]
+	path = home/.vim/bundle_storage/vim-vebugger
+	url = https://github.com/idanarye/vim-vebugger

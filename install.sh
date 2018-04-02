@@ -13,7 +13,9 @@ default_bundles=(
   nerdcommenter
   nerdtree
   processing.vim
+  python-mode
   rvm.vim
+  ropevim
   snipmate.vim
   statusline
   supertab
@@ -31,6 +33,8 @@ default_bundles=(
   vim-stylus
   vim-unimpaired
   vim-surround
+  vim-vebugger
+  vimproc.vim
   yankring
 )
 
@@ -64,6 +68,14 @@ for f in `ls $full_path/home/.vim/snippets_storage/`; do
 done
 # Make an additional symlink of css for scss
 ln -sv $full_path/home/.vim/snippets_storage/css.snippets $full_path/home/.vim/snippets/scss.snippets
+
+# Install additional packages
+echo "Installing vimproc"
+cd $full_path/home/.vim/bundle_storage/vimproc.vim
+make
+
+cd $full_path/home/.vim/bundle_storage/ropevim
+sudo python setup.py install
 
 echo "--------------------------------------------------"
 echo "*** Install Complete ***"
