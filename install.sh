@@ -7,6 +7,7 @@ default_bundles=(
   cocoa.vim
   gist-vim
   jade.vim
+  jedi-vim
   json.vim
   markdown-preview.vim
   nerdcommenter
