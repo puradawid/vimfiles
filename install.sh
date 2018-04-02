@@ -1,40 +1,12 @@
 #!/bin/bash
 default_bundles=(
-  ack.vim
-  actionscript.vim
-  applescript.vim
-  browser-refresh.vim
-  cocoa.vim
-  gist-vim
-  jade.vim
-  jedi-vim
-  json.vim
-  markdown-preview.vim
-  nerdcommenter
   nerdtree
-  processing.vim
-  rvm.vim
-  snipmate.vim
-  statusline
-  supertab
-  syntastic
-  taglist.vim
-  vim-coffee-script
-  vim-cucumber
-  vim-fugitive
-  vim-haml
-  vim-javascript
-  vim-markdown
-  vim-rails
-  vim-ruby
-  vim-scala
-  vim-stylus
-  vim-unimpaired
-  vim-surround
-  yankring
 )
 
 full_path=`pwd`
+
+echo "Removing bundles if were created already"
+rm -rf $full_path/home/.vim/bundle
 
 echo "Creating directories..."
 mkdir -p $full_path/home/.vim/bundle
@@ -56,14 +28,6 @@ echo "Symlinking default bundles..."
 for i in "${default_bundles[@]}"; do
   ln -sv $full_path/home/.vim/bundle_storage/$i $full_path/home/.vim/bundle/$i
 done
-
-
-echo "Symlinking default snippets..."
-for f in `ls $full_path/home/.vim/snippets_storage/`; do
-  ln -sv $full_path/home/.vim/snippets_storage/$f $full_path/home/.vim/snippets/$f
-done
-# Make an additional symlink of css for scss
-ln -sv $full_path/home/.vim/snippets_storage/css.snippets $full_path/home/.vim/snippets/scss.snippets
 
 echo "--------------------------------------------------"
 echo "*** Install Complete ***"
